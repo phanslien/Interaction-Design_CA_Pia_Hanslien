@@ -1,0 +1,87 @@
+.grid_checkout {
+  display: grid;
+  grid-template-columns: repeat(1, 4);
+  gap: 10px;
+}
+/* info about the item(s) in the cart */
+.shopping_bag_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  border-bottom: 1px solid #ffa821;
+}
+p {
+  color: #404040;
+  align-self: center;
+}
+
+.img_checkout {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+/* Customer info */
+.form {
+  background-color: #f4f4f4;
+  width: 60%;
+}
+h2 {
+  margin-left: 40px;
+  color: #485a73;
+}
+input,
+textarea,
+select {
+  border: 1px solid #485a73;
+  margin: 5px 5px 5px 40px;
+  padding: 10px;
+  border-radius: 1px;
+  font-size: 14px;
+}
+
+.form-wrapper > * {
+  display: flex;
+  flex-direction: column;
+}
+.form p {
+  margin-left: 40px;
+}
+/* Payment info and confirm */
+#payment_card,
+.pay,
+#payment_vipps,
+.pay {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.pay {
+  background-color: #f4f4f4;
+  border: 2px solid #ffa821;
+  margin-top: 30px;
+}
+.pay a {
+  display: block;
+  margin: 10px 10px 10px 40px;
+  width: 30%;
+  text-align: center;
+}
+
+#payment_card:checked ~ .pay,
+#payment_vipps:checked ~ .pay {
+  display: block;
+}
+
+.payment_vipps,
+.payment_card {
+  text-align: left;
+  margin: 20px;
+}
+
+label:hover {
+  cursor: pointer;
+}

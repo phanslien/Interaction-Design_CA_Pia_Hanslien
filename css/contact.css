@@ -1,0 +1,34 @@
+.contact_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+/* Contact info*/
+.contact_box1 p {
+  color: #404040;
+  margin-left: 20px;
+}
+.sticky_box {
+  position: fixed;
+}
+
+/* Common Questions */
+.contact_box2 {
+  border-right: 1px solid #485a73;
+}
+.contact_box2 p {
+  color: #404040;
+  margin-left: 20px;
+}
+/* Heading and icon */
+h1,
+h2 {
+  color: #485a73;
+  text-align: left;
+  margin-left: 20px;
+}
+.fa-envelope,
+h2 {
+  color: #485a73;
+  padding-right: 10px;
+}

@@ -1,0 +1,55 @@
+/* Tabs */
+.tabs {
+  margin-top: 30px;
+}
+.tab_one,
+.tab_two {
+  width: 140px;
+  padding: 9px;
+  float: left;
+  border-radius: 15px 15px 0px 0px;
+}
+.tab_one {
+  background-color: #485a73;
+  margin-left: 0px;
+}
+.tab_two {
+  background-color: #34455c;
+  margin-left: -20px;
+}
+/* Text box one*/
+.box {
+  margin-top: 70px;
+  width: 100%;
+  background-color: #485a73;
+  border-radius: 0px 10px 10px 10px;
+}
+.box p {
+  color: #f4f4f4;
+  padding: 10px 10px;
+}
+
+/* Text box two */
+.box_pagetwo {
+  background-color: #34455c;
+  margin-top: 70px;
+  width: 100%;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.box_pagetwo p {
+  color: #f4f4f4;
+  padding: 10px 10px;
+}
+
+/* headings */
+h1 {
+  padding-top: 20px;
+}
+h1,
+h2,
+h3 {
+  color: #ffa821;
+  margin-left: 10px;
+  text-align: left;
+}

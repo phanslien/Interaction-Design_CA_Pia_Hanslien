@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1070px) {
+  /* contact */
+  .contact_grid {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+  }
+
+  .contact_box2 {
+    border-right: none;
+    border-bottom: 1px solid #ffa821;
+  }
+
+  .sticky_box {
+    position: relative;
+  }
+  .contact_box2 h3,
+  h4,
+  h5 {
+    font-size: 12px;
+    margin-top: 120px;
+    margin-left: 0px;
+    width: 110px;
+  }
+  /* shopping bag */
+  .shopping_bag_items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* nav */
+  nav label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    width: 100%;
+    display: none;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  li {
+    display: block;
+    border-bottom: 1px solid #30425c;
+  }
+
+  .fa-shopping-bag,
+  .fa-user,
+  .fa-search,
+  .fa-bars {
+    color: #485a73;
+  }
+  .icons {
+    border-bottom: none;
+  }
+  /* header */
+  .logo {
+    width: 50%;
+  }
+  /* footer */
+  .footer_items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* index */
+  .nested_section_one,
+  .nested_section_two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .nested_section_two div {
+    margin-top: 120px;
+  }
+
+  /* jackets */
+  .clothes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* jackets SHOWING */
+  .jacket_display {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .text li {
+    border-bottom: none;
+  }
+  .text p {
+    text-align: left;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+  .cart {
+    right: 0px;
+    width: 100%;
+  }
+}
