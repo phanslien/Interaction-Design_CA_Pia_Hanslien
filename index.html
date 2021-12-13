@@ -12,7 +12,7 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-    <link rel="shortcut icon" href="#">
+  
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,23 +30,24 @@
   <body>
     <header>
       <img src="images/rainydayslogo_Desktop.png" alt="Logo of rainy days" class="logo"/>
+      <nav>
+        <label for="toggle"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+          <li><a href="index.html" id="active">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="icons">
+            <a href="index.html"><i class="fas fa-search"></i></a>
+            <a href="index.html"><i class="fas fa-user"></i></a>
+            <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </div>
+      </nav>
+      
     </header>
-    <nav>
-      <label for="toggle"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="toggle" />
-      <div class="menu">
-        <li><a href="index.html" id="active">Home</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="icons">
-          <a href="index.html"><i class="fas fa-search"></i></a>
-          <a href="index.html"><i class="fas fa-user"></i></a>
-          <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
-        </li>
-      </div>
-    </nav>
     <main>
       <div class="nested_section_three">
         <section class="section_three_item_one">
@@ -70,17 +71,17 @@
       <div class="nested_section_two">
         <section class="section_two_item_one">
           <div>
-            <a href="#" class="cta">Sale</a>
+            <a href="index.html" class="cta">Sale</a>
           </div>
         </section>
         <section class="section_two_item_two">
           <div>
-            <a href="#" class="cta">New Arrivals</a>
+            <a href="index.html" class="cta">New Arrivals</a>
           </div>
         </section>
         <section class="section_two_item_three">
           <div>
-            <a href="#" class="cta">Best Sellers</a>
+            <a href="index.html" class="cta">Best Sellers</a>
           </div>
         </section>
       </div>
