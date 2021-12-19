@@ -1,107 +1,127 @@
-@media only screen and (max-width: 1070px) {
-  /* contact */
-  .contact_grid {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: auto;
-  }
-
-  .contact_box2 {
-    border-right: none;
-    border-bottom: 1px solid #ffa821;
-  }
-
-  .sticky_box {
-    position: relative;
-  }
-  .contact_box2 h3,
-  h4,
-  h5 {
-    font-size: 12px;
-    margin-top: 120px;
-    margin-left: 0px;
-    width: 110px;
-  }
-  /* shopping bag */
-  .shopping_bag_items {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
+@media only screen and (max-width: 950px) {
+.showing {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
-@media only screen and (max-width: 800px) {
-  /* nav */
-
-  nav label {
+@media only screen and (max-width: 730px) {
+  /* Nav */
+  .hamburger {
     display: block;
-    cursor: pointer;
   }
-  .menu {
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    background-color: var(--offwhite);
+    position: fixed;
+    flex-direction: column;
+    right: -100%;
+    top: 0px;
+    gap: 0;
     width: 100%;
-    display: none;
-  }
-  #toggle:checked + .menu {
-    display: block;
-  }
-  li {
-    display: block;
-    border-bottom: 1px solid #30425c;
+    text-align: center;
+    transition: 0.4s;
   }
 
-  .fa-shopping-bag,
-  .fa-user,
-  .fa-search,
-  .fa-bars {
-    color: #485a73;
+  .nav-item {
+    margin: 15px 0;
   }
-  .icons {
-    border-bottom: none;
+
+  .nav-menu.active {
+    right: 0;
   }
-  /* header */
-  .logo {
-    width: 50%;
+  nav {
+    background-color: var(--offwhite);
   }
-  /* footer */
+  .nav-menu a {
+    color: var(--darkblue);
+  }
+  
+/* header */
+ header img {
+  display: none;
+ }
+
+ .nav-branding {
+  background-image: url(../images/rainydayslogo_Desktop_new_darrrk.png);
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 110px;
+  margin-top: -18px;
+ }
+  
+/* footer */
   .footer_items {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
   }
 
-  /* index */
-  .nested_section_one,
-  .nested_section_two {
-    display: grid;
+  /* content homepage */
+  .section_one {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-  }
-  .nested_section_two div {
-    margin-top: 120px;
+    gap: 100px;
   }
 
   /* jackets */
-  .clothes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .jacket_women, .jacket_men {
+    width: 190px;
+    height: 260px;
   }
 
-  /* jackets SHOWING */
-  .jacket_display {
-    display: grid;
-    grid-template-columns: auto;
+  /* North 2.0 */
+  .text {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
   }
-
-  .text li {
-    border-bottom: none;
+  
+  .text img {
+    margin-left: 0px;
   }
-  .text p {
-    text-align: left;
+  h1 {
+    text-align: center;
+    color: var(--black);
+    font-family: var(--heading);
+    font-size: var(--sizesubheading);
+    margin-top: 20px;
   }
-
-  label:hover {
-    cursor: pointer;
-  }
-  .cart {
-    right: 0px;
-    width: 100%;
-  }
+h2 {
+  font-size: 16px;
 }
+  .cta, .cta_about {
+    margin-bottom: -40px;
+    font-size: var(--sizemobile);
+  }
+  
+
+
+/*popup box*/
+.popup-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%; 
+  height: 50%;
+}
+
+.close_popup {
+  text-align: right;
+}
+
+.cta {
+  margin: 20px 0;
+  min-width: 100%;
+}
+}
+
+
+
+
+
+ 

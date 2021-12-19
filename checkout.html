@@ -1,150 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2744976,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-      </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="North rain jacket is the best selling jacket by Rainy Days.">
-    <meta name="author" content="Rainy Days">
-    <meta name="keywords" content="rainjacket, womens fashion, mens fashion, rain, jackets, outdoor clothes, outdoor fashion ">
-    <title>Your bag | Rainy Days</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/checkout.css" rel="stylesheet"/>
-    <link href="css/media.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/e904f2479d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="North rain jacket is the best selling jacket by Rainy Days.">
+  <meta name="author" content="Rainy Days">
+  <meta name="keywords" content="rainjacket, womens fashion, mens fashion, rain, jackets, outdoor clothes, outdoor fashion ">
+  <title>Your bag | Rainy Days</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/checkout.css" rel="stylesheet"/>
+  <link href="css/media.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/e904f2479d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img src="images/rainydayslogo_Desktop.png" alt="Logo of rainy days" class="logo">
-    </header>
-    <nav>
-        <label for="toggle"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="icons">
-                <a href="index.html"><i class="fas fa-search"></i></a>
-                <a href="#"></i><i class="fas fa-user"></i></a>
-                <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
-            </li>             
-        </div>
+  <header>
+    <nav class="navbar">
+      <img src="images/rainydayslogo_Desktop_new_light.png" alt="Logo of rainy days" class="logo"/>
+      <a href="index.html" class="nav-branding"></a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+        <li class="nav-item"><a href="men.html" class="nav-link">Men</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
-    <main>
-        <h1>Your cart</h1>
-        <section class="grid_checkout"> 
-            <section>
-                <div class="shopping_bag_items"> 
-                    <img src="images/women-orangejackets.jpg" alt="Woman wearing a orange jacket with the hood over her head" class="img_checkout">
-                    <p><span>Product:</span> North</p>
-                    <p><span>Size:</span> M</p>
-                    <p><span>Quantity:</span> 1</p>
-                    <p><span>Total:</span> 89$</p>
-                </div>
-            </section>
-            <section>
-                <h2>Your Information</h2>
-                <form method="POST">
-                    <div class="form-wrapper">
-                        <section class="form">
-                            <label for="fname"><p>First Name</p></label>
-                            <input type="text" id="name" name="name" />
-                            <label for="lname"><p>Last Name</p></label>
-                            <input type="text" id="name" name="namee" />
-                            <label for="email"><p>E-post</p></label>
-                            <input type="text" id="email" name="email" />
-                            <label for="address"><p>Street Address</p></label>
-                            <input type="text" id="address" name="address" />
-                            <label for="postalcode"><p>Postal Code</p></label>
-                            <input type="text" id="postalcode" name="Postalcode" />
-                            <label for="country"><p>Country</p></label>
-                            <input type="text" id="country" name="country" />
-                            <div>
-                            <input type="checkbox" id="email-updates" name="email-updates" />
-                          <label for="email-updates">Sign up for email updates.</label>
-                        </section>
-                    </div>
-                </form>
-            </section>
-            <section class="payment_card">
-                <label for="payment_card" class="cta_payment_card">Pay with Card</label>
-                <input type="checkbox" id="payment_card">
-                <section class="pay">
-                    <form method="POST">
-                        <div class="form-wrapper">
-                            <section class="form">
-                                <label for="number"><p>Card Number</p></label>
-                                <input type="text" id="number" name="number" />
-                                <label for="expiredate"><p>Expiry Date</p></label>
-                                <input type="text" id="expiredate" name="Expiredate" />
-                                <label for="cvv"><p>CVC/CVV</p></label>
-                                <input type="text" id="cvv" name="cvv" />
-                                <label for="name"><p>Cardholders Full Name</p></label>
-                                <input type="text" id="name" name="name" />
-                            </section>
-                        </div>
-                    </form>
-                    <a href="checkoutsuccess.html">Confirm Payment</a>
-                </section>
-            </section>
-            <section class="payment_vipps">
-                <label for="payment_vipps" class="cta_payment_vipps">Pay with Vipps</label>
-                <input type="checkbox" id="payment_vipps">
-                <section class="pay">
-                    <form method="POST">
-                        <div class="form-wrapper">
-                            <section class="form">
-                                <label for="phonenumber"><p>Phone number</p></label>
-                                <input type="tel" id="tel" name="tel" />
-                            </section>
-                            <a href="checkoutsuccess.html">Confirm Payment</a>
-                        </div>
-                    </form>
-                </section>
-            </section>
-    </main>
-    <footer>
-        <div class="footer_items">
-            <div>
-                <p>Help</p>
-                <li><a href="x">Privacy Policy</a></li>
-                <li><a href="x">Cookies</a></li>
-                <li><a href="x">Customer Service</a></li>
-                <li><a href="x">Terms and Conditions</a></li>
-                <li><a href="x">Cancellations, Returns & Refunds</a></li>
-            </div>
-            <div>
-                <p>Information</p>
-                <li><a href="about.html">About Rainy Days</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">FAQ</a></li></div>
-            <div>
-                <p>Rainy Days</p>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="x">New Arrivals</a></li>
-                <li><a href="x">Best Sellers</a></li>
-                <li><a href="x">Sale</a></li></div>
-            <div>
-                <p>Follow Us</p>
-                <li><i class="fab fa-twitter"></i><a href="x">Twitter</a></li>
-                <li><i class="fab fa-instagram"></i><a href="x">Instagram</a></li>
-                <li><i class="fab fa-facebook"></i><a href="x">Facebook</a></li></div>
-            </div>
+  </header>
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="index.html">Ho..</a></li>
+      <li>/</li>
+      <li><a href="jacketwomen.html">Wome..</a></li>
+      <li>/</li>
+      <li><a href="jacketwomen.html">North 2.0</a></li>
+      <li>/</li>
+      <li id="activecrumbs">Checkout</li>
+      <li id="shoppingcart"><a href="/checkout.html"><i class="fas fa-shopping-bag" id="active"></i>Cart (<span>0</span>)</a></li>
+    </ul>
+    <h1>Your cart</h1>
+    <div class="shopping_bag_items"> 
+      <img src="images/women-pic2.jpg" alt="Woman wearing a orange jacket with the hood over her head" class="img_checkout">
+      <p><span>Product:</span> North</p>
+      <p><span>Size:</span> M</p>
+      <p><span>Quantity:</span> 1</p>
+      <p><span>Total:</span> 89$</p>
+    </div>
+    <div class="containertwo">
+      <div class="header">
+        <h2 class="headingtwo">Shipping Information</h2>
+      </div>
+      <form id="form" class="form" action="/checkoutsuccess.html" method="get">
+        <div class="form-control">
+          <label for="firstname">First Name</label>
+          <input type="text" placeholder="Example: Ola" id="firstname" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="lastname">Last Name</label>
+          <input type="text" placeholder="Example: Nordmann" id="lastname" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="address">Address</label>
+          <input type="text" placeholder="Example: Bragernes Torg 10" id="address"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="postnumber">Post Number</label>
+          <input type="number" placeholder="Example: 3017" id="postnumber"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input type="email" placeholder="Example: ola@nordmann.com" id="email"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="header">
+          <h3>Payment</h3>
+        </div>
+        <div class="form-control">
+          <label for="fullname">Cardholders Full Name</label>
+          <input type="text" placeholder="Example: Ola Nordmann" id="fullname"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="cardnumber">Card Number</label>
+          <input type="number" placeholder="Example: 1111 2222 3333 4444" id="cardnumber"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="expirydate">Expiry Date</label>
+          <input type="month" placeholder="Example: MM/YY" id="expirydate"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="cvccvv">CVC / CVV</label>
+          <input type="number" placeholder="Example: 123" id="cvccvv"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>  
+  </main>
+  <footer>
+    <div class="footer_items">
+      <div>
+        <p>Help</p>
+        <li><a href="x">Privacy Policy</a></li>
+        <li><a href="x">Cookies</a></li>
+        <li><a href="x">Customer Service</a></li>
+        <li><a href="x">Terms and Conditions</a></li>
+        <li><a href="x">Cancellations, Returns & Refunds</a></li>
+      </div>
+      <div>
+        <p>Information</p>
+        <li><a href="about.html">About Rainy Days</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">FAQ</a></li>
+      </div>
+      <div>
+        <p>Rainy Days</p>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="x">New Arrivals</a></li>
+        <li><a href="x">Best Sellers</a></li>
+        <li><a href="x">Sale</a></li>
+      </div>
+      <div>
+        <p>Follow Us</p>
+        <li><i class="fab fa-twitter"></i><a href="x">Twitter</a></li>
+        <li><i class="fab fa-instagram"></i><a href="x">Instagram</a></li>
+        <li><i class="fab fa-facebook"></i><a href="x">Facebook</a></li>
+      </div>
+      </div>
     </footer>
-</body>
+    <script src="js/checkout.js"></script>
+    <script src="js/hamburger.js"></script>
+  </body>
 </html>

@@ -1,87 +1,118 @@
-.grid_checkout {
-  display: grid;
-  grid-template-columns: repeat(1, 4);
-  gap: 10px;
-}
-/* info about the item(s) in the cart */
+
 .shopping_bag_items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-bottom: 20px;
   margin-left: 20px;
-  border-bottom: 1px solid #ffa821;
+  border-bottom: 1px solid var(--orange);
 }
 p {
-  color: #404040;
+  color: var(--gray);
   align-self: center;
 }
-
 .img_checkout {
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-/* Customer info */
+
+.containertwo, .containerthree {
+  display:inline;
+	background-color: var(--offwhite);
+	border-radius: 5px;
+	box-shadow: 0 2px 5px var(--black);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid var(--offwhite);
+	background-color: var(--offwhite);
+	padding: 20px 40px;
+}
+
+.header h2, .header h3 {
+	margin: 0;
+  font-size: var(--sizesubheading);
+}
+
 .form {
-  background-color: #f4f4f4;
-  width: 60%;
-}
-h2 {
-  margin-left: 40px;
-  color: #485a73;
-}
-input,
-textarea,
-select {
-  border: 1px solid #485a73;
-  margin: 5px 5px 5px 40px;
-  padding: 10px;
-  border-radius: 1px;
-  font-size: 14px;
+	padding: 30px 40px;	
 }
 
-.form-wrapper > * {
-  display: flex;
-  flex-direction: column;
-}
-.form p {
-  margin-left: 40px;
-}
-/* Payment info and confirm */
-#payment_card,
-.pay,
-#payment_vipps,
-.pay {
-  display: none;
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
 }
 
-label:hover {
-  cursor: pointer;
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
 }
 
-.pay {
-  background-color: #f4f4f4;
-  border: 2px solid #ffa821;
-  margin-top: 30px;
-}
-.pay a {
-  display: block;
-  margin: 10px 10px 10px 40px;
-  width: 30%;
-  text-align: center;
+.form-control input {
+	border: 2px solid var(--offwhite);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
 }
 
-#payment_card:checked ~ .pay,
-#payment_vipps:checked ~ .pay {
-  display: block;
+.form-control input:focus{
+	outline: 0;
+	border-color: var(--gray);
 }
 
-.payment_vipps,
-.payment_card {
-  text-align: left;
-  margin: 20px;
+.form-control.success input {
+	border-color: var(--green);
 }
 
-label:hover {
-  cursor: pointer;
+.form-control.error input {
+	border-color: var(--red);
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: var(--green);
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: var(--red);
+	visibility: visible;
+}
+
+.form-control small{
+	color: var(--red);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: var(--orange);
+	border: 2px solid var(--orange);
+	border-radius: 4px;
+	color: var(--offwhite);
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
 }

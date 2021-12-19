@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2744976,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,45 +16,35 @@
   </head>
   <body>
     <header>
-      <img src="images/rainydayslogo_Desktop.png" alt="Logo of rainy days" class="logo"/>
+      <nav class="navbar">
+        <img src="images/rainydayslogo_Desktop_new_light.png" alt="Logo of rainy days" class="logo"/>
+        <a href="index.html" class="nav-branding"></a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+          <li class="nav-item"><a href="men.html" class="nav-link">Men</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" id="active">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <label for="toggle"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="toggle" />
-      <div class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="about.html" id="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="icons">
-          <a href="index.html"><i class="fas fa-search"></i></a>
-          <a href="#"><i class="fas fa-user"></i></a>
-          <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
-        </li>
-      </div>
-    </nav>
     <main>
       <ul class="breadcrumb">
         <li><a href="index.html">Home</a></li>
         <li>/</li>
-        <li id="active">About</li>
+        <li id="activecrumbs">About</li>
+        <li id="shoppingcart"><a href="/checkout.html"><i class="fas fa-shopping-bag"></i>Cart (<span>0</span>)</a></li>
     </ul>
-      <div class="tabs">
-        <li class="tab_one"><a href="about.html">About</a></li>
-        <li class="tab_two"><a href="about2.html">About</a></li>
-      </div>
-      <div class="box">
         <h1>How it all started</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo
           quos? Id eveniet quam provident debitis voluptatum rerum sed. Minus
           sunt rem expedita quae. Alias quidem pariatur nemo maxime minus. </p>
-          <p>Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Soluta amet inventore impedit voluptas fuga, dolorem
-          ea dolore tempora ab molestiae ad consequatur veritatis sapiente
-          officia pariatur. </p>
-          <p>Repudiandae quidem consequatur dolor. Lorem ipsum
+        <p>Repudiandae quidem consequatur dolor. Lorem ipsum
           dolor sit amet consectetur adipisicing elit. Suscipit, quo quos? Id
           eveniet quam provident debitis voluptatum rerum sed. Minus sunt rem
           expedita quae.
@@ -105,7 +85,6 @@
           quos? Id eveniet quam provident debitis voluptatum rerum sed. Minus
           sunt rem expedita quae. Alias quidem pariatur nemo maxime minus?
         </p>
-      </div>
     </main>
     <footer>
       <div class="footer_items">
@@ -139,5 +118,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

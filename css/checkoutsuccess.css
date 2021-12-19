@@ -1,39 +1,9 @@
-/* text */
-section {
+h2 {
   text-align: center;
-  max-width: 100%;
-  padding: 0px 40px 0px 30px;
-  border: 1px solid#485a73;
+  margin-bottom: 500px;
 }
 
-section p {
-  color: #404040;
-  font-size: 16px;
-  text-transform: none;
-  margin-bottom: 50px;
-}
-
-h3 {
-  color: #485a73;
-  padding-bottom: 30px;
-}
-/* Showing of items bought */
-.product {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-}
-.img {
-  background-image: url(../images/women_yellowjacket.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-}
-/* button */
-section a {
-  display: inline-block;
-  margin-bottom: 30px;
+a {
+  color: var(--black);
+  
 }

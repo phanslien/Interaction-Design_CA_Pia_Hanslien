@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2744976,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-      </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,94 +15,100 @@
     <script src="https://kit.fontawesome.com/e904f2479d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img src="images/rainydayslogo_Desktop.png" alt="Logo of rainy days" class="logo">
-    </header>
-    <nav>
-        <label for="toggle"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="toggle"/>
-            <section class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="icons">
-                    <a href="index.html"><i class="fas fa-search"></i></a>
-                    <a href="#"></i><i class="fas fa-user"></i></a>
-                    <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
-                </li>
-            </section>
+  <header>
+    <nav class="navbar">
+      <img src="images/rainydayslogo_Desktop_new_light.png" alt="Logo of rainy days" class="logo"/>
+      <a href="index.html" class="nav-branding"></a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+        <li class="nav-item"><a href="men.html" class="nav-link">Men</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
-    <main>
-        <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li>/</li>
-            <li><a href="men.html">Mens</a></li>
-            <li>/</li>
-            <li id="active">North</li>
+  </header>
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>/</li>
+      <li><a href="men.html">Mens</a></li>
+      <li>/</li>
+      <li id="activecrumbs">Forrest 360</li>
+      <li id="shoppingcart"><a href="/checkout.html"><i class="fas fa-shopping-bag"></i>Cart (<span>0</span>)</a></li>
+    </ul>
+    <h1>Forrest 360</h1>
+    <section class="text">
+      <div>
+        <img src="images/man-picture-two.jpg" alt="Man wearing a red and gray jacket holding his hood">
+      </div>
+      <div>
+        <ul class="list">
+          <li>At vero eos et accusamus et iusto</li>
+          <li>Temporibus autem quibusdam</li>
+          <li>Itaque earum rerum</li>
         </ul>
-        <h1>Forrest 360</h1>
-        <div class="jacket_display">
-            <section class="big_img">
-                <img src="images/man-picture-one.jpg" alt="Man wearing a orange rain jacket">
-            </section>
-            <section class="text">
-                <ul>
-                   <li>- Odio eu feugiat</li>
-                   <li>- Aliquam nulla</li>
-                   <li>- Commodo quis </li>
-                </ul>
-                <p>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, sed do eiusmod tempor na aliqua,
-                Orci eu lobortis elementum nibh. Mauris commodo quis imperdiet massa.
-                Aliquam nulla facilisi cras fermentum odio eu feugiat.</p>
-                <label for="size">Pick a size:</label>
-                <select id="size" name="size">
-                <option value="...">...</option>
-                <option value="l">XS</option>
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="l">XL</option>
-            </select>
-                <label for="add-to-cart" class="cta_addcart">Add to Cart</label>
-                <input type="checkbox" id="add-to-cart">
-                <section class="cart">
-                    <h1>One item has been added to your cart</h1>
-                    <p><span>Product:</span> North</p>
-                    <p><span>Size:</span> M</p>
-                    <p><span>Quantity:</span> 1</p>
-                    <p><span>Total:</span> 89$</p>
-                    <a href="checkout.html">Go to checkout</a>
-                    <a href="index.html">Continue shopping</a>
-                </section>
-        </div>
+        <section class="drop-down">
+          <label for="size">Pick a size:</label>
+          <select id="size" name="size">
+            <option value="...">...</option>
+            <option value="l">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="l">XL</option>
+          </select>
+        </section>
+          <a id="cta_popupbox" class="cta_addcart">Add to cart</a>
+          <div id="mypopupbox" class="popupbox">
+            <div class="popup-content">
+              <span class="close_popup">x</span>
+              <h3>An item has been added to you cart</h3>
+              <a href="jacketmens.html" class="cta">Continue Shopping</a>
+              <a href="checkout.html" class="cta">Go to checkout</a>
+            </div>
+          </div>
+      </div>
+    </section>
     </main>
-    <footer><div class="footer_items">
-        <div><p>Help</p>
-            <li><a href="x">Privacy Policy</a></li>
-            <li><a href="x">Cookies</a></li>
-            <li><a href="x">Customer Service</a></li>
-            <li><a href="x">Terms and Conditions</a></li>
-            <li><a href="x">Cancellations, Returns & Refunds</a></li>
+    <footer>
+      <div class="footer_items">
+        <div>
+          <p>Help</p>
+          <li><a href="x">Privacy Policy</a></li>
+          <li><a href="x">Cookies</a></li>
+          <li><a href="x">Customer Service</a></li>
+          <li><a href="x">Terms and Conditions</a></li>
+          <li><a href="x">Cancellations, Returns & Refunds</a></li>
         </div>
-        <div><p>Information</p>
-            <li><a href="about.html">About Rainy Days</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">FAQ</a></li></div>
-        <div><p>Rainy Days</p>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="men.html">Men</a></li>
-            <li><a href="x">New Arrivals</a></li>
-            <li><a href="x">Best Sellers</a></li>
-            <li><a href="x">Sale</a></li></div>
-        <div><p>Follow Us</p>
-            <li><i class="fab fa-twitter"></i><a href="x">Twitter</a></li>
-            <li><i class="fab fa-instagram"></i><a href="x">Instagram</a></li>
-            <li><i class="fab fa-facebook"></i><a href="x">Facebook</a></li></div>
+        <div>
+          <p>Information</p>
+          <li><a href="about.html">About Rainy Days</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">FAQ</a></li>
         </div>
+        <div>
+          <p>Rainy Days</p>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="x">New Arrivals</a></li>
+          <li><a href="x">Best Sellers</a></li>
+          <li><a href="x">Sale</a></li>
+        </div>
+        <div>
+          <p>Follow Us</p>
+          <li><i class="fab fa-twitter"></i><a href="x">Twitter</a></li>
+          <li><i class="fab fa-instagram"></i><a href="x">Instagram</a></li>
+          <li><i class="fab fa-facebook"></i><a href="x">Facebook</a></li>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="js/hamburger.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
 </html>

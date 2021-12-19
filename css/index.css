@@ -1,54 +1,19 @@
-/* 1 */
-.nested_section_three {
-  display: grid;
-  grid-template-rows: 1fr;
-  background-color: transparent;
-  min-height: 10vh;
-}
-/* 2 */
-.nested_section_one {
+.section_one {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 30px;
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: -50px;
 }
 
 .section_one_item_one {
-  background-image: url(../images/women_yellowjacket.jpg);
+  background-image: url(../images/couple-in-the-rain-2.jpg);
 }
 .section_one_item_two {
-  background-image: url(../images/climbing_man.jpg);
+  background-image: url(../images/couple-in-the-rain.jpg);
 }
 .section_one_item_one,
 .section_one_item_two {
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  min-height: 65vh;
-  width: 100%;
-}
-.nested_section_one div {
-  margin-top: 275px;
-}
-/* 3 */
-.nested_section_two {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  margin-bottom: 80px;
-}
-.section_two_item_one {
-  background-image: url(../images/couple-in-the-rain-2.jpg);
-}
-.section_two_item_two {
-  background-image: url(../images/couple-hiking.jpg);
-}
-.section_two_item_three {
-  background-image: url(../images/couple-in-the-rain.jpg);
-}
-.section_two_item_one,
-.section_two_item_two,
-.section_two_item_three {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -56,6 +21,22 @@
   height: 250px;
   border-radius: 50%;
 }
-.nested_section_two div {
-  margin-top: 275px;
+
+.cta {
+  margin-left: 55px;
+  margin-top: 20px;
 }
+
+h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: var(--sizesubheading);
+  font-family: var(--heading);
+}
+
+.section_one_item_one:hover, .section_one_item_two:hover {
+  opacity: 70%;
+}
+
+
+

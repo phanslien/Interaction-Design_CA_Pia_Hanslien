@@ -1,31 +1,38 @@
-.clothes {
+.showing {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: space-evenly;
-}
-/* TEXT */
-.clothes p {
-  color: #404040;
-  padding-bottom: 10px;
-  font-size: 14px;
-  border-bottom: 1px solid #ffa821;
-}
-/* LINKS */
-.clothes a:hover {
-  color: #ffa821;
-}
-.clothes a {
-  color: #404040;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-/* IMAGES STYLING */
-.clothes img:hover {
-  opacity: 70%;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 30px;
 }
 
-.clothes img {
-  width: 100%;
-  height: auto;
+.jacket_women {
+  background: url(/images/women-pic2.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 300px;
+  height: 300px;
 }
+.jacket_men {
+  background: url(/images/man-picture-one.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 300px;
+  height: 300px;
+}
+.item p {
+  margin: 5px 0 15px 0;
+}
+.item a {
+  color: var(--black);
+  font-size: var(--sizesubheading);
+  text-decoration: underline var(--orange) 4px solid;
+}
+.item a:hover {
+  text-decoration: underline var(--black) 4px solid;
+}
+.jacket_women:hover, .jacket_men:hover {
+  opacity: 70%;
+}
+ 
