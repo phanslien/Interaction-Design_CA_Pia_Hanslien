@@ -1,0 +1,30 @@
+.showing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 30px;
+  }
+  
+  .jacket {
+    background: url(/images/man-picture-one.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 300px;
+    height: 300px;
+  }
+  .item_one p {
+    margin: 5px 0 15px 0;
+  }
+  .item_one a {
+    color: var(--black);
+    font-size: var(--sizesubheading);
+    text-decoration: underline var(--orange) 4px solid;
+  }
+  .item_one a:hover {
+    text-decoration: underline var(--black) 4px solid;
+  }
+  .jacket:hover {
+    opacity: 70%;
+  }
+  
